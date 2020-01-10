@@ -10,13 +10,21 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('my second app'),
+        title: Text('my secon app'),
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30.0),
-        child: Text('hello'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Text('Tower Capital'),
+          FlatButton(
+            onPressed: () {},
+            color: Colors.amber,
+            child: Text('click  me'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
